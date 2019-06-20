@@ -7,8 +7,12 @@ public class FizzBuzz {
 
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        Scanner scan = new Scanner(System.in);
         System.out.println("Please enter a number");
+        int input = scan.nextInt();
+
+        fizzBuzz.FizzBuzz(input);
     }
 
     public void FizzBuzz (int input){

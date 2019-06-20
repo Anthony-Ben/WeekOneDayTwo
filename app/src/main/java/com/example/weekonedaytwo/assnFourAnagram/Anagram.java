@@ -4,16 +4,18 @@ public class Anagram {
     public static void main(String[] args) {
         Anagram anagram = new Anagram();
         String word1 = "TACO";
-        String word2 = "NAOC";
-        boolean isAnagram = anagram.checkAnagrams(word1, word2);
-
-
+        String word2 = "COAT";
+        String word3 = "LAST";
+        boolean isAnagram1 = anagram.checkAnagrams(word1, word2);
+        boolean isAnagram2 = anagram.checkAnagrams(word1, word3);
+/*
         if(isAnagram){
             System.out.println( word1 + " " + word2 + " are anagrams!");
         }
         else {
             System.out.println(word1 + " " + word2 + " are not anagrams!");
         }
+        */
     }
 
     public boolean checkAnagrams(String word1, String word2) {
@@ -39,6 +41,12 @@ public class Anagram {
 
             if(compareToWord1.equals(word1)){
                 result = true;
+
+                System.out.println(word1 + " and " + word2 + " are anagrams");
+            }
+            else
+            {
+                System.out.println(word1 + " and " + word2 + " are not anagrams");
             }
         }
         return result;
