@@ -5,6 +5,7 @@ public class ReverseString {
     public static void main(String[] args) {
 
         ReverseString reverseString = new ReverseString();
+
         String word1 = "racecar";
         String word2 = "AZ";
         String word3 = "NisiOisiN";
@@ -14,6 +15,7 @@ public class ReverseString {
         reverseString.checkPalindrome(word2);
         reverseString.checkPalindrome(word3);
         reverseString.checkPalindrome(word4);
+
     }
 
     public boolean checkPalindrome(String word){

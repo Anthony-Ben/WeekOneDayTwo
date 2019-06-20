@@ -1,5 +1,8 @@
 package com.example.weekonedaytwo.assnFourAnagram;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Anagram {
     public static void main(String[] args) {
         Anagram anagram = new Anagram();
@@ -23,10 +26,9 @@ public class Anagram {
 
         if(word1.length() == word2.length()){
             int totalLength = word1.length();
-
             char[] unscrambleWord2 = new char[totalLength];
-            String compareToWord1 = "";
-            //Loop to sort the second String into a char Array if a characters match between word1 and word2
+            String compareToWord1;
+            //Loop to sort the second String and insert into a char Array if a character matches between word1 and word2
             for (int i = 0; i < totalLength; i++) {
                 for (int j = 0; j < totalLength; j++) {
                     if (word1.charAt(i) == word2.charAt(j)) {
